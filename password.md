@@ -4,10 +4,12 @@
 - duration(of Olympics) = 17
 <br>
 - cities_tmp = hexadecimal format of md5 hashed cities
+<br>
 - date_tmp = reverse the date, take the difference of revered date bits shifted to the right by tens of duration and bits shifted to the right by units of duration
 <br>
 - list = (date_tmp) append (cities_tmp chars in even position) + (cities_tmp chars in odd position) append (date_tmp)
-%% python index position
+<span style="color:red">%% python index position</span>
+<br>
 <br>
 then do base64 encode
 <br>
