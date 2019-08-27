@@ -1,24 +1,17 @@
-# Password Generation 
-- cities = list of cities in the "Olympics_2020.txt" file
-- date = defaced date showed on the webpage(8 digits)
-- duration(of Olympics) = 17
-<br>
-- cities_tmp = hexadecimal format of md5 hashed cities
-<br>
-- date_tmp = reverse the date, take the difference of revered date bits shifted to the right by tens of duration and bits shifted to the right by units of duration
-<br>
-- list = (date_tmp) append (cities_tmp chars in even position) + (cities_tmp chars in odd position) append (date_tmp)
-<br>
-<br>
-then do base64 encode
-<br>
-double the list with splitting each word in even and odd positoin
-<br>
-double the list with original one and swapcase one
-<br>
-finally even double the list with original list rotate right by 1 and original list rotate left by 1
+Let's test your scripting skills, below is a guide to how I generate super-strong uncrackable passwords ;)
 
-#### the password is inside the final list
+# Password Generation 
+Inputs:
+- cities = list of cities that can be found on my Git
+- date = the date of when the list was generated (YYYYMMDD, e.g. 20190525 is 25th of May 2019)
+
+First, we strip out all the spaces in the list of cities.
+Next, we append the date and encode to base64
+We reverse each line
+We hash each line using md5
+And just for fun, for every two characters, we swap them (e.g. ab12gh becomes ba21hg)
+
+#### the password is somewhere inside the final list...
 
 ## LET'S TRY!!
 
