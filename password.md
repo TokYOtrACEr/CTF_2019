@@ -22,3 +22,4 @@ And just for fun, for every two characters, we swap them (e.g. ab12gh becomes ba
 
 ## LET'S TRY!!
 
+*Don't forget to use port 2222 for ssh ;)
